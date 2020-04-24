@@ -11,8 +11,8 @@ const Showcase = () =>{
   return (
     <>
       <section>
-        <Container fluid>
-          <div id = "ShowcaseHeader">
+        <div id = "ShowcaseHeader">
+          <Container fluid>
             <Row>
               <Col>
                 <Header>
@@ -21,10 +21,20 @@ const Showcase = () =>{
               </Col>
             </Row>
             <Row>
+              <Col>
+                <Container>
+                  <Row style={{display:"flex",justifyContent:"center", textAlign:"center", }} >
+                    <Col><h4>React</h4></Col>
+                    <Col><h4>JavaScript</h4></Col>
+                    <Col><h4>SQL</h4></Col>
+                    <Col><h4>Python</h4></Col>
+                  </Row>
 
+                </Container>
+              </Col>
             </Row>
-          </div>
-        </Container>
+          </Container>
+        </div>
       </section>
     </>
   )

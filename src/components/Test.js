@@ -35,7 +35,7 @@ const Test = () =>{
 return(
   <>
     <Showcase/>
-    <section>
+    <section >
       <Container fluid>
         <div id='MainShowcase'> 
           <Row>
@@ -52,8 +52,8 @@ return(
           <Row>
             <Col md={12}>
               <div className='work-showcase'>
-                  <animated.div class = "bg"className='work-showcase bg' style={{...transitions.props,backgroundImage: `url(${pic.url})`,href:`${pic.link}`}}>
-                    {/* <img src={pic.url}/> */}
+                  <animated.div class = "bg"className='work-showcase bg' style={{...transitions.props,href:`${pic.link}`}}>
+                    <img style={{height:"25rem"}}src={pic.url}/>
                   </animated.div>
               </div>
             </Col>
